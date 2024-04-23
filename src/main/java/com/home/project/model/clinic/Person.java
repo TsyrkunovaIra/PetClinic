@@ -34,5 +34,4 @@ public abstract class Person {
         int result1 = address == null ? 0 : address.hashCode();
         result = result1 + result + age;
         return  result;}
-
 }
