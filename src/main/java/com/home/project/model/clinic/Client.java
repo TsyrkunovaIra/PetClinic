@@ -9,12 +9,12 @@ public class Client extends Person {
     private ArrayList<HistoryClient> historyVisit;
     public ArrayList<Animal> getAnimals() {return animals;}
     public Client (String name, String address, int age)
-    {super ( name, address, age);}
+    {super (name, address, age);}
     public void setAnimals(ArrayList<Animal> animals) {this.animals = animals;}
     public void setPrintAnimalName(String printAnimalName){}
     public void getPrintAnimalName() {
         for (Animal aN : animals) { System.out.println(aN.getAnimalName());}}
-    public ArrayList<HistoryClient> getHistoryVisit() {
+    public ArrayList <HistoryClient> historyVisits() {
         return historyVisit;}
     public void setHistoryVisit(ArrayList<HistoryClient> historyVisit) {
         this.historyVisit = historyVisit;}

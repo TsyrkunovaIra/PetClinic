@@ -2,10 +2,12 @@ package com.home.project.model.clinic;
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Clinic {
     private ArrayList<Client> basa;
     private long id;
+    private ArrayList<HistoryClient> historyVisit;
     public DayOfWeek getDayOfWeek(){
         return LocalDateTime.now().getDayOfWeek();}
     public void setDayOfWeek(DayOfWeek dayOfWeek){}
@@ -22,12 +24,22 @@ public class Clinic {
     public ArrayList<Client> getBasa() {return basa;}
     public void setBasa(ArrayList<Client> basa) {this.basa = basa;}
 
-    @Override
-    public boolean equals(Object client) {
-        return super.equals(client);
-        if (this == client) return true;
-        if ((client == null || getClass() != client.getClass())) return false;
-        Client that = (Client) client;}
+    public void registration(Client client) {
+        if (client.getHistoryVisit() == null) {
+          registration(new Client(client.getName(), client.getAddress(), client.getAge()));
+        }  {
+            System.out.println(client.getHistoryVisit());
+        }
+
 
     }
+
+    public ArrayList<HistoryClient> getHistoryVisit() {
+        return historyVisit;
+    }
+
+    public void setHistoryVisit(ArrayList<HistoryClient> historyVisit) {
+        this.historyVisit = historyVisit;
+    }
+}
 

@@ -73,6 +73,11 @@ for (Client c : basa) {
 
     HistoryClient h3 = new HistoryClient("03 mart 2024", "vomiting", "hgbjhg", 30.5);
     ArrayList<HistoryClient> hC3 = new ArrayList<>(Arrays.asList(h3));
+
+    Client c8 = new Client(",bmlkn", "jnkjn;j," , 26);
+
+    System.out.println(c8.getHistoryVisit());
+
 }}}
 
 
