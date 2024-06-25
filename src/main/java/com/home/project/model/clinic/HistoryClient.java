@@ -1,5 +1,9 @@
 package com.home.project.model.clinic;
 
+import com.home.project.model.animals.Animal;
+
+import java.util.ArrayList;
+
 public class HistoryClient {
     public class HistoryClient {
         public class HistoryClient {

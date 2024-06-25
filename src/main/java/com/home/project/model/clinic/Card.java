@@ -1,5 +1,7 @@
 package com.home.project.model.clinic;
 
+import java.util.ArrayList;
+
 public class Card {
     private HistoryClient historyClient;
     private Client client;
