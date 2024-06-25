@@ -1,6 +1,9 @@
 package com.home.project.model.animals;
 
+import java.util.ArrayList;
+
 public abstract class Animal {
+    private ArrayList<Animal> animals;
     private String animalName;
     private int animalAge;
     private Ill ill;
@@ -16,11 +19,18 @@ public abstract class Animal {
      void sound(){
         System.out.println("sound");
     }
+    public String toString(){
+        return " animal name: "+ animalName + ", " + " age: " + animalAge;
+    }
+    public void amelioration(){
+        System.out.println("condition");}
+    public void getPrintIll() {
+        for (Animal iL : animals) {
+            System.out.println(iL.getIll().getNameIll());
+        }
+    }
 
-
-
-
-
-    
-
+    public void setAnimals(ArrayList<Animal> animals) {
+        this.animals = animals;
+    }
 }

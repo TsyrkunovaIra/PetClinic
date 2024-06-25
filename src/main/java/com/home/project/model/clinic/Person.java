@@ -2,24 +2,39 @@ package com.home.project.model.clinic;
 
 import com.home.project.utils.IdGenerator;
 
+import java.util.ArrayList;
+
 public abstract class Person {
     private final long id;
     private String name;
     private String address;
     private int age;
+    private ArrayList<HistoryClient> historyVisit;
     public Person(String name, String address, int age){
         this.id = IdGenerator.generateId();
         this.name = name;
         this.address = address;
         this.age = age;
     }
-    public long getId() {return id;}
-    public String getName() {return name;}
-    public String getAddress() {return address;}
-    public int getAge() {return age;}
-    public void setName(String name) {this.name = name;}
-    public void setAddress(String address) {this.address = address;}
-    public void setAge(int age) {this.age = age;}
+    public String getName()
+    {return name;}
+    public void setName(String name)
+    {this.name = name;}
+    public int getAge()
+    {return age;}
+    public void setAge(int age)
+    {this.age = age;}
+    public String getAddress()
+    {return address;}
+    public void setAddress(String address)
+    {this.address = address;}
+    public final long getId()
+    {return id;}
+    public ArrayList<HistoryClient> getHistoryVisit() {
+        return historyVisit;}
+    public void setHistoryVisit(ArrayList<HistoryClient> historyVisit) {
+        this.historyVisit = historyVisit;}
+
     public boolean equals(Object p){
         if (this == p) return true;
         if (p==null || getClass() != p.getClass()) return false;

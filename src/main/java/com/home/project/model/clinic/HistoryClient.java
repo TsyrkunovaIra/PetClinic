@@ -12,7 +12,6 @@ private String nameIll;
 private String treatment;
  private double score;
 public HistoryClient (String dataVisit, String nameIll, String treatment, double score){
-
 this.dataVisit = dataVisit;
 this.nameIll = nameIll;
 this.treatment = treatment;
