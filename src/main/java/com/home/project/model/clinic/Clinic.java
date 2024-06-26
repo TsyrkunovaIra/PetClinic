@@ -29,9 +29,12 @@ public class Clinic {
           registration(new Client(client.getName(), client.getAddress(), client.getAge()));
         }
         if (client.getHistoryVisit().size() != 0){
-
             System.out.println(client.getHistoryVisit());
         }
+        Scanner historyVisit = new Scanner(System.in);
+        HistoryClient historyClient1 = new HistoryClient(historyVisit.nextLine(), historyVisit.nextLine(), historyVisit.nextLine(),historyVisit.nextDouble() );
+        ArrayList<HistoryClient>historyClient = new ArrayList<>();
+        historyClient.add(historyClient1);
 
 
     }

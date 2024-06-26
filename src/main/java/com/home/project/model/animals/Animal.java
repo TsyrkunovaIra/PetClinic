@@ -3,6 +3,7 @@ package com.home.project.model.animals;
 import java.util.ArrayList;
 
 public abstract class Animal {
+
     private ArrayList<Animal> animals;
     private String animalName;
     private int animalAge;
