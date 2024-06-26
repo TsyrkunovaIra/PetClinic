@@ -27,7 +27,9 @@ public class Clinic {
     public void registration(Client client) {
         if (client.getHistoryVisit() == null) {
           registration(new Client(client.getName(), client.getAddress(), client.getAge()));
-        }  {
+        }
+        if (client.getHistoryVisit().size() != 0){
+
             System.out.println(client.getHistoryVisit());
         }
 
