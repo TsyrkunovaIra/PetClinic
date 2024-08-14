@@ -3,7 +3,7 @@ package com.home.project.model.animals;
 import java.util.ArrayList;
 
 public abstract class Animal {
-
+    private ArrayList<MedicalHistory> medicalHistories;
     private ArrayList<Animal> animals;
     private String animalName;
     private int animalAge;
@@ -33,5 +33,13 @@ public abstract class Animal {
 
     public void setAnimals(ArrayList<Animal> animals) {
         this.animals = animals;
+    }
+
+    public ArrayList<MedicalHistory> getMedicalHistories() {
+        return medicalHistories;
+    }
+
+    public void setMedicalHistories(ArrayList<MedicalHistory> medicalHistories) {
+        this.medicalHistories = medicalHistories;
     }
 }
