@@ -78,6 +78,8 @@ for (Client c : basa) {
 
     System.out.println(c8.getHistoryVisit());
 
+    clinic.registration(c1);
+
 }}}
 
 
