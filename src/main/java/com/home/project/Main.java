@@ -56,10 +56,6 @@ for (Client c : basa) {
     Clinic clinic = new Clinic();
     clinic.toWork();
 
-    Ill ill = new Ill();
-    ill.treatment("smdjvbhgsdj", "kjdh");
-    ill.treatment("djh", 2);
-    ill.treatment("lkfgjl", 12.5, 10);
 
     System.out.println();
     System.out.println(cat1.getAnimalName() != null ? cat1.getAnimalName() : cat1.getIll().getNameIll());
