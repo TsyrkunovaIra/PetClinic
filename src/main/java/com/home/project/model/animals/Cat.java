@@ -6,8 +6,5 @@ public class Cat extends Animal{
         super(animmalName, animalAge);
     }
 
-    @Override
-    void sound() {
-        System.out.println("meow");
-    }
+
 }
