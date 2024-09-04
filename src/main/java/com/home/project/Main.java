@@ -76,7 +76,6 @@ for (Client c : basa) {
 
     Client c8 = new Client(",bmlkn", "jnkjn;j," , 26);
 
-    System.out.println(c8.getHistoryVisit());
 
     clinic.registration(c1);
 

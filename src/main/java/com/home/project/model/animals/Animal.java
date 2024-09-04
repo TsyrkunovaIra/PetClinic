@@ -3,7 +3,6 @@ package com.home.project.model.animals;
 import java.util.ArrayList;
 
 public abstract class Animal {
-    private ArrayList<MedicalHistory> medicalHistories;
     private ArrayList<Animal> animals;
     private String animalName;
     private int animalAge;
@@ -16,30 +15,8 @@ public abstract class Animal {
     public String getAnimalName() {return animalName;}
     public void setAnimalAge(int animalAge) {this.animalAge = animalAge;}
     public void setAnimalName(String animalName) {this.animalName = animalName;}
-    public void setIll(Ill ill){this.ill =ill;}
-     void sound(){
-        System.out.println("sound");
-    }
     public String toString(){
-        return " animal name: "+ animalName + ", " + " age: " + animalAge;
-    }
-    public void amelioration(){
-        System.out.println("condition");}
-    public void getPrintIll() {
-        for (Animal iL : animals) {
-            System.out.println(iL.getIll().getNameIll());
-        }
+        return " animal name: "+ animalName + ", " + " age: " + animalAge + " " + ill;
     }
 
-    public void setAnimals(ArrayList<Animal> animals) {
-        this.animals = animals;
-    }
-
-    public ArrayList<MedicalHistory> getMedicalHistories() {
-        return medicalHistories;
-    }
-
-    public void setMedicalHistories(ArrayList<MedicalHistory> medicalHistories) {
-        this.medicalHistories = medicalHistories;
-    }
 }
