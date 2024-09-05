@@ -1,5 +1,6 @@
 package com.home.project.model.clinic;
 import com.home.project.model.animals.Animal;
+import com.home.project.utils.IdGenerator;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
@@ -36,16 +37,28 @@ public class Clinic {
         if(LocalDateTime.now().getDayOfWeek().name().equals(day.name()))
         System.out.println();}
     }
+    HashMap<Long, ArrayList<HistoryClient>> visitController = new HashMap<>();
     public void registration(Client client) {
-        HashMap<Long, ArrayList<HistoryClient>> visitController = new HashMap<>();
-
         for (Map.Entry<Long, ArrayList<HistoryClient>> entry : visitController.entrySet()){
             ArrayList<HistoryClient> historyVisits = entry.getValue();
-            if (historyVisits == null){
-                historyVisits = new ArrayList<>();
+
+             if (client.getHistoryVisits() == null);{
+                    historyVisits =new ArrayList<>();
+                    Scanner scanner = new Scanner(System.in);
+                    Client client1 = new Client(scanner.nextLine(), scanner.nextLine(), scanner.nextInt());
+                    IdGenerator.generateId();
+                    HistoryClient visit = new HistoryClient(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextDouble());
+                    historyVisits.add(visit);
+                    client1.setHistoryVisit(historyVisits);
+                    entry.setValue(client1.getHistoryVisits());
             }
 
+            if (client.getHistoryVisits().size() != 0) {
+                Scanner scanner =new Scanner(System.in);
+                entry.getValue().add(new HistoryClient(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextDouble()));
 
+
+            }
         }
 
 
