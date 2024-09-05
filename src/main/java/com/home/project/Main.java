@@ -11,6 +11,7 @@ import com.home.project.utils.IdGenerator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 
 public class Main {
 public static void main(String[] args) {
@@ -74,7 +75,9 @@ for (Client c : basa) {
 
 
     clinic.registration(c1);
+    System.out.println(c1.getId());
 
 }}}
+
 
 

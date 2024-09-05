@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public abstract class Animal {
     private ArrayList<Animal> animals;
     private String animalName;
-    private int animalAge;
+    private int  animalAge;
     private Ill ill;
     public Animal (String animalName, int animalAge){
         this.animalAge = animalAge;

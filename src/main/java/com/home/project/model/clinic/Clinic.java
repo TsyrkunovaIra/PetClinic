@@ -7,9 +7,10 @@ import java.time.LocalDateTime;
 import java.util.*;
 
 public class Clinic {
+
     private ArrayList<Client> basa;
     private long id;
-    private ArrayList<HistoryClient> historyVisits;
+    private ArrayList<HistoryClient> ohistoryVisits;
     private Client client;
     private Animal animal;
     private ArrayList<Animal> animals;
@@ -19,8 +20,8 @@ public class Clinic {
     public void setId(long id) {this.id = id;}
     public ArrayList<Client> getBasa() {return basa;}
     public void setBasa(ArrayList<Client> basa) {this.basa = basa;}
-    public ArrayList<HistoryClient> getHistoryVisits() {return historyVisits;}
-    public void setHistoryVisits(ArrayList<HistoryClient> historyVisits) {this.historyVisits = historyVisits;}
+ //   public ArrayList<HistoryClient> getHistoryVisits() {return historyVisits;}
+  //  public void setHistoryVisits(ArrayList<HistoryClient> historyVisits) {this.historyVisits = historyVisits;}
     public Client getClient() {return client;}
     public void setClient(Client client) {this.client = client;}
     public Animal getAnimal() {return animal;}
@@ -43,7 +44,7 @@ public class Clinic {
             ArrayList<HistoryClient> historyVisits = entry.getValue();
 
              if (client.getHistoryVisits() == null);{
-                    historyVisits =new ArrayList<>();
+                    historyVisits = new ArrayList<>();
                     Scanner scanner = new Scanner(System.in);
                     Client client1 = new Client(scanner.nextLine(), scanner.nextLine(), scanner.nextInt());
                     IdGenerator.generateId();

@@ -10,6 +10,14 @@ import java.util.Arrays;
 
 public class Main1 {
     public static void main(String[] args) {
+
+
+
+
+
+
+
+
         Animal cat9 = new Cat("knhkn",  12);
         ArrayList<Animal> a1 = new ArrayList<>();
         a1.add(cat9);
