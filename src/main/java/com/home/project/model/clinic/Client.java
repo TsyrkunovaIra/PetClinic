@@ -11,7 +11,10 @@ public class Client extends Person {
     public Client (String name, String address, int age)
     {super (name, address, age);}
     public void setAnimals(ArrayList<Animal> animals) {this.animals = animals;}
-    public void setPrintAnimalName(String printAnimalName){}
+
+    public ArrayList<HistoryClient> getHistoryVisits() {
+        return historyVisits;
+    }
 
     public ArrayList <HistoryClient> historyVisits() {return historyVisits;}
     public void setHistoryVisit(ArrayList<HistoryClient> historyVisits) {this.historyVisits = historyVisits;}
